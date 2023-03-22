@@ -20,7 +20,6 @@ class Anagrammer {
       }
       anagrams[i] = oneAnagram;
     }
-
     return anagrams;
   }
 
