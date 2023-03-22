@@ -3,8 +3,8 @@ import java.util.Scanner;
 public class Main {
   public static void main(String[] args) {
     Scanner input = new Scanner(System.in);
-    int n;
-
+    int n = 20;
+    /*
     if (args.length == 0) {
       System.out.print("No argument for n, insert it : ");
       n = input.nextInt();
@@ -15,7 +15,7 @@ public class Main {
       System.out.print("n must be non negative number. Reinsert it: ");
       n = input.nextInt();
     }
-
+    */
     System.out.print("Enter the word: ");
     String word = input.nextLine();
 
@@ -23,6 +23,8 @@ public class Main {
       n = MathUtils.factorial(word.length());
     }
 
-    StringUtils.printStringArray(Anagrammer.computeAnagrams(word, n));
+    //StringUtils.printStringArray(Anagrammer.computeAnagrams(word, n));
+
+    StringUtils.printStringArray(Anagrammer.computeAllAnagrams(word));
   }
 }
