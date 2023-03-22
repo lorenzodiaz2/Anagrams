@@ -17,14 +17,14 @@ public class Main {
     }
 
     System.out.print("Enter the word: ");
-    String word = input.nextLine();
+    String word = input.next();
 
     if (n > MathUtils.factorial(word.length())) {
       n = MathUtils.factorial(word.length());
     }
 
     int decision;
-    System.out.print("If you want to compute all anagrams press 0, else press 1 : ");
+    System.out.print("If you want to compute all anagrams press 0 : ");
     decision = input.nextInt();
 
     if(decision == 0){
